@@ -1,0 +1,19 @@
+.v-select-list {
+  border-radius: 0;
+
+  .v-list__tile {
+    border-radius: 0;
+    height: 30px !important;
+  }
+}
+.v-menu__content {
+  border-radius: 0;
+}
+.v-select {
+  .v-select__slot {
+    label,
+    input {
+      padding-left: 12px;
+    }
+  }
+}

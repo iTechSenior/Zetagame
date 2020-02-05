@@ -1,0 +1,53 @@
+.theme--light.v-table tbody tr:last-child {
+  border-bottom: 1px solid $table-border-color !important;
+}
+// .theme--dark.v-table tbody tr:not(:last-child) {
+//   border-bottom: unset;
+// }
+table.v-table thead {
+  height: $table-head-height + 20;
+  background-color: #303030 !important;
+  // background-color: black;
+}
+.theme--light.v-table tbody tr:hover:not(.v-datatable__expand-row) {
+  background: $table-hover-color !important;
+}
+table.v-table thead td,
+table.v-table thead th {
+  font-size: $font-size-general;
+}
+table.v-table tbody td {
+  font-size: $font-size-general;
+  font-weight: $font-weight-lighter;
+}
+
+// table.v-table tbody td:not(:first-child),
+// table.v-table tbody th:not(:first-child) {
+//   border-left: 1px solid hsla(0, 0%, 100%, 0.12) !important;
+// }
+table.v-table tbody td,
+table.v-table tbody th,
+table.v-table thead td,
+table.v-table thead th {
+  padding: 0px $tabs-text-box-padding !important;
+}
+
+table.v-table tbody td,
+table.v-table tbody th {
+  height: 40px;
+}
+
+.v-datatable__progress {
+  display: none;
+}
+
+.v-datatable__actions {
+  background-color: #303030 !important;
+}
+
+// table thead tr th span {
+//   font-size: 1.0625rem !important;
+// }
+.v-datatable__actions__select .v-select {
+  margin: 5px 0 5px 34px;
+}

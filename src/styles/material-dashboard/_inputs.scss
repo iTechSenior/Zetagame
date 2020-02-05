@@ -1,0 +1,82 @@
+.theme--light.v-text-field .v-input__slot:before {
+  border-color: $input-color !important;
+}
+
+.input--is-focused .v-input__control .v-input__slot:after {
+  border-color: red !important;
+}
+
+.v-text-field__slot {
+  input {
+    @include material-placeholder {
+      color: $input-color;
+    }
+  }
+
+  .v-label {
+    color: $label-color !important;
+    // font-size: $font-size-small;
+  }
+}
+.v-label {
+  font-size: $font-size-small;
+}
+
+.theme--light.v-input:not(.v-input--is-disabled) input,
+.theme--light.v-input:not(.v-input--is-disabled) textarea {
+  color: $black-color;
+  font-size: $font-size-general;
+}
+
+.v-text-field input {
+  padding: 8px 10px;
+}
+.v-textarea.v-text-field--enclosed textarea {
+  margin-top: 8px;
+}
+.v-text-field--box > .v-input__control > .v-input__slot,
+.v-text-field--full-width > .v-input__control > .v-input__slot,
+.v-text-field--outline > .v-input__control > .v-input__slot {
+  min-height: 40px;
+}
+.v-autocomplete.v-text-field--enclosed:not(.v-text-field--solo):not(.v-text-field--single-line)
+  .v-select__slot
+  > input {
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 3px;
+}
+.v-text-field.v-text-field--enclosed .v-input__append-inner,
+.v-text-field.v-text-field--enclosed .v-input__append-outer,
+.v-text-field.v-text-field--enclosed .v-input__prepend-inner,
+.v-text-field.v-text-field--enclosed .v-input__prepend-outer {
+  margin-top: 8px;
+}
+.theme--dark.v-text-field--outline > .v-input__control > .v-input__slot {
+  border-width: 1px;
+  border-radius: 0;
+}
+.theme--dark.v-text-field--outline:not(.v-input--is-focused):not(.v-input--has-state)
+  > .v-input__control
+  > .v-input__slot:hover {
+  border-width: 1px;
+}
+.v-text-field--box input,
+.v-text-field--full-width input,
+.v-text-field--outline input {
+  margin-top: 3px;
+  padding-left: 0px;
+}
+
+.v-text-field.v-text-field--solo .v-input__control {
+  min-height: 30px;
+  padding: 0;
+}
+
+@include inputs-color($brand-primary, 'purple');
+@include inputs-color($brand-warning, 'orange');
+@include inputs-color($brand-info, 'info');
+@include inputs-color($brand-danger, 'danger');
+@include inputs-color($brand-success, 'success');
+@include inputs-color($brand-success, 'primary');

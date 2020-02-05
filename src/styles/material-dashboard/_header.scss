@@ -1,0 +1,29 @@
+$lineHeight: 50px;
+$ctrlHeight: 25px;
+
+.header {
+  .layout {
+    width: 60%;
+    float: right;
+    margin-right: 20px;
+
+    height: $lineHeight;
+    min-height: $lineHeight;
+
+    .v-input,
+    .v-input__control,
+    .v-input__slot {
+      height: $ctrlHeight !important;
+      min-height: $ctrlHeight !important;
+    }
+    .v-btn {
+      height: $ctrlHeight !important;
+      margin: 0 !important;
+      padding: 5px 0 !important;
+      min-width: unset;
+    }
+  }
+  .v-toolbar {
+    margin-top: 92px !important;
+  }
+}
